@@ -1,6 +1,7 @@
 package com.tcc.club_management.reserva.model;
 
 import com.tcc.club_management.associado.model.Associado;
+import com.tcc.club_management.espaco.model.Espaco;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -24,7 +25,7 @@ public class Reserva {
     private Associado associado;
 
     @ManyToOne
-    private Reserva reserva;
+    private Espaco espaco;
 
     @Column(name = "data_reserva")
     private LocalDate dataReserva;

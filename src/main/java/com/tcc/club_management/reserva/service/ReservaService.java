@@ -32,11 +32,11 @@ public class ReservaService {
     }
 
     public List<Reserva> listarPorAssociado(Long associadoId){
-        return reservaRepository.findByAssociadoId(associadoId);
+        return reservaRepository.findByAssociado_Id(associadoId);
     }
 
     public List<Reserva> listarPorEspaco(Long espacoId){
-        return reservaRepository.findByEspacoId(espacoId);
+        return reservaRepository.findByEspaco_Id(espacoId);
     }
 
 }
