@@ -2,6 +2,8 @@ package com.tcc.club_management.espaco.service;
 
 import com.tcc.club_management.espaco.model.Espaco;
 import com.tcc.club_management.espaco.repository.EspacoRepository;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -25,6 +27,10 @@ public class EspacoService {
 
     public Espaco buscarPorId(Long id){
         return espacoRepository.findById(id).orElse(null);
+    }
+
+    public Page<Espaco> buscarPorNome(String nome, Pageable pageable) {
+        return espacoRepository.findByNomeContainingIgnoreCase(nome, pageable);
     }
 
     public void deletar(Long id){
