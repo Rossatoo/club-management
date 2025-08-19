@@ -1,6 +1,5 @@
-package com.tcc.club_management.associado.repository;
+package com.tcc.club_management.associado;
 
-import com.tcc.club_management.associado.model.Associado;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.web.bind.annotation.CrossOrigin;
 

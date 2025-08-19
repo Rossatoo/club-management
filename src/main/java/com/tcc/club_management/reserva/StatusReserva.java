@@ -1,4 +1,4 @@
-package com.tcc.club_management.reserva.model;
+package com.tcc.club_management.reserva;
 
 public enum StatusReserva {
     PENDENTE,

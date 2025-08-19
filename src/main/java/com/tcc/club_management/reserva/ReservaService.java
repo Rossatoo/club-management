@@ -1,7 +1,5 @@
-package com.tcc.club_management.reserva.service;
+package com.tcc.club_management.reserva;
 
-import com.tcc.club_management.reserva.model.Reserva;
-import com.tcc.club_management.reserva.repository.ReservaRepository;
 import org.springframework.stereotype.Service;
 
 import java.util.List;

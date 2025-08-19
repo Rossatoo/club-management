@@ -1,10 +1,7 @@
-package com.tcc.club_management.espaco.controller;
+package com.tcc.club_management.espaco;
 
-import com.tcc.club_management.espaco.model.Espaco;
-import com.tcc.club_management.espaco.service.EspacoService;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
-import org.springframework.data.web.PageableDefault;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;

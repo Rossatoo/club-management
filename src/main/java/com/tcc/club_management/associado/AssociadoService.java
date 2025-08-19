@@ -1,7 +1,5 @@
-package com.tcc.club_management.associado.service;
+package com.tcc.club_management.associado;
 
-import com.tcc.club_management.associado.model.Associado;
-import com.tcc.club_management.associado.repository.AssociadoRepositoy;
 import org.springframework.stereotype.Service;
 
 import java.util.List;

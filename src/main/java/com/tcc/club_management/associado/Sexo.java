@@ -1,4 +1,4 @@
-package com.tcc.club_management.associado.model;
+package com.tcc.club_management.associado;
 
 public enum Sexo {
     MASCULINO,

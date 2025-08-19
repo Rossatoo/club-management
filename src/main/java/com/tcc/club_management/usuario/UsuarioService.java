@@ -1,7 +1,5 @@
-package com.tcc.club_management.usuario.service;
+package com.tcc.club_management.usuario;
 
-import com.tcc.club_management.usuario.model.Usuario;
-import com.tcc.club_management.usuario.repositoy.UsuarioRepository;
 import org.springframework.stereotype.Service;
 
 import java.util.List;

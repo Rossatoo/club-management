@@ -1,7 +1,5 @@
-package com.tcc.club_management.usuario.controller;
+package com.tcc.club_management.usuario;
 
-import com.tcc.club_management.usuario.model.Usuario;
-import com.tcc.club_management.usuario.service.UsuarioService;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;

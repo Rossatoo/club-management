@@ -1,7 +1,7 @@
-package com.tcc.club_management.reserva.model;
+package com.tcc.club_management.reserva;
 
-import com.tcc.club_management.associado.model.Associado;
-import com.tcc.club_management.espaco.model.Espaco;
+import com.tcc.club_management.associado.Associado;
+import com.tcc.club_management.espaco.Espaco;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;

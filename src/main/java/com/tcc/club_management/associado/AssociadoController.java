@@ -1,7 +1,5 @@
-package com.tcc.club_management.associado.controller;
+package com.tcc.club_management.associado;
 
-import com.tcc.club_management.associado.model.Associado;
-import com.tcc.club_management.associado.service.AssociadoService;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;

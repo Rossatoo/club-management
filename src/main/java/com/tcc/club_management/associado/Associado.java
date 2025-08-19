@@ -1,8 +1,8 @@
-package com.tcc.club_management.associado.model;
+package com.tcc.club_management.associado;
 
 import com.fasterxml.jackson.annotation.JsonBackReference;
 import com.fasterxml.jackson.annotation.JsonManagedReference;
-import com.tcc.club_management.usuario.model.Usuario;
+import com.tcc.club_management.usuario.Usuario;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;

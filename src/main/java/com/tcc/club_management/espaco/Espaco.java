@@ -1,4 +1,4 @@
-package com.tcc.club_management.espaco.model;
+package com.tcc.club_management.espaco;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;

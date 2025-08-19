@@ -1,7 +1,5 @@
-package com.tcc.club_management.reserva.controller;
+package com.tcc.club_management.reserva;
 
-import com.tcc.club_management.reserva.model.Reserva;
-import com.tcc.club_management.reserva.service.ReservaService;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;

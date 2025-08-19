@@ -1,6 +1,5 @@
-package com.tcc.club_management.reserva.repository;
+package com.tcc.club_management.reserva;
 
-import com.tcc.club_management.reserva.model.Reserva;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.web.bind.annotation.CrossOrigin;
 

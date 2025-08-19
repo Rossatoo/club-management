@@ -1,6 +1,5 @@
-package com.tcc.club_management.usuario.repositoy;
+package com.tcc.club_management.usuario;
 
-import com.tcc.club_management.usuario.model.Usuario;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.web.bind.annotation.CrossOrigin;
 

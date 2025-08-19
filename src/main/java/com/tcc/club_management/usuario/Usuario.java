@@ -1,4 +1,4 @@
-package com.tcc.club_management.usuario.model;
+package com.tcc.club_management.usuario;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
