@@ -4,6 +4,7 @@ import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.springframework.security.crypto.password.PasswordEncoder;
 
 @Entity
 @Data
@@ -25,5 +26,7 @@ public class Usuario {
     private Perfil perfil;
 
     private Boolean ativo;
+
+
 
 }

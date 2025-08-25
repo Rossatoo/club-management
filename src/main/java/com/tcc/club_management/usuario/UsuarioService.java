@@ -1,5 +1,9 @@
 package com.tcc.club_management.usuario;
 
+import com.tcc.club_management.usuario.Usuario;
+import com.tcc.club_management.usuario.UsuarioRepository;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -7,10 +11,14 @@ import java.util.List;
 @Service
 public class UsuarioService {
 
+    @Autowired
     private final UsuarioRepository usuarioRepository;
+    private final PasswordEncoder passwordEncoder;
 
-    public UsuarioService(UsuarioRepository usuarioRepository) {
+
+    public UsuarioService(UsuarioRepository usuarioRepository,  PasswordEncoder passwordEncoder) {
         this.usuarioRepository = usuarioRepository;
+        this.passwordEncoder = passwordEncoder;
     }
 
     public List<Usuario> listarTodos(){
@@ -18,6 +26,7 @@ public class UsuarioService {
     }
 
     public Usuario salvar(Usuario usuario){
+        usuario.setSenha(passwordEncoder.encode(usuario.getSenha()));
         return usuarioRepository.save(usuario);
     }
 
@@ -28,4 +37,6 @@ public class UsuarioService {
     public void deletar(Long id){
         usuarioRepository.deleteById(id);
     }
+
+
 }

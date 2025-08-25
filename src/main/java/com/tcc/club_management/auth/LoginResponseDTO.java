@@ -5,8 +5,7 @@ import lombok.Data;
 
 @Data
 @AllArgsConstructor
-public class AuthResponse {
+public class LoginResponseDTO {
     private String token;
-    private String nome;
-    private String perfil;
+    private String tipo = "bearer";
 }
