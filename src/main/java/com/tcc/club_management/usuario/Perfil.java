@@ -1,7 +1,7 @@
 package com.tcc.club_management.usuario;
 
 public enum Perfil {
-    USUARIO,
+    COMUM,
     ADMIN,
     SOCIO,
     PENDING

@@ -20,14 +20,14 @@ public class UsuarioController {
         return usuarioService.listarTodos();
     }
 
-    @PostMapping
-    public Usuario cadastrarUsuarios(@RequestBody Usuario usuario){
-        return usuarioService.salvar(usuario);
-    }
-
     @GetMapping("/{id}")
     public Usuario buscarUsuario(@PathVariable Long id){
         return usuarioService.buscarPorId(id);
+    }
+
+    @PutMapping("/ìd")
+    public Usuario atualizar(@PathVariable Long id, @RequestBody Usuario usuario){
+        return usuarioService.atualizar(id, usuario);
     }
 
     @DeleteMapping("/{id}")

@@ -39,12 +39,10 @@ public class SecurityConfig {
                         (req, res, e) -> res.sendError(HttpServletResponse.SC_UNAUTHORIZED)
                 ))
                 .authorizeHttpRequests(auth -> auth
-                        .requestMatchers("/auth/login", "/home", "/login").permitAll()
-                        .requestMatchers(HttpMethod.POST, "/usuarios").permitAll()
-                        .requestMatchers("/espacos/**").hasAnyRole("USUARIO", "ADMIN", "SOCIO")
+                        .requestMatchers("/auth/login", "/auth/register", "/home", "/login").permitAll()
+                        .requestMatchers("/espacos/**").hasAnyRole("COMUM", "ADMIN", "SOCIO")
                         .requestMatchers("/admin/**").hasRole("ADMIN")
-                        .anyRequest()
-                        .authenticated()
+                        .anyRequest().authenticated()
                 )
                 .authenticationProvider(daoAuthProvider())
                 .addFilterBefore(jwtFilter, UsernamePasswordAuthenticationFilter.class);
