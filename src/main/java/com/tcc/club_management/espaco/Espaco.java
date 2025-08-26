@@ -24,13 +24,26 @@ public class Espaco {
 
     private int capacidade;
 
-    private BigDecimal  valor;
-
     @Column(name = "imagem_url")
     private String imagemUrl;
 
     private String recursos; //Ex: Wifi, Ar-condicionado, estacionamento
 
     private Boolean disponivel;
+
+    @Enumerated(EnumType.STRING)
+    private CategoriaEspaco categoria;
+
+    @Column(name = "preco_hora_socio")
+    private BigDecimal precoHoraSocio;
+
+    @Column(name = "preco_hora_comum")
+    private BigDecimal precoHoraComum;
+
+    @Column(name = "preco_dia_socio")
+    private BigDecimal precoDiaSocio;
+
+    @Column(name = "preco_dia_comum")
+    private BigDecimal precoDiaComum;
 
 }

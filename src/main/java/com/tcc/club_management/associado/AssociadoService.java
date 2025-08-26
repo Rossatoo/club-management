@@ -7,9 +7,9 @@ import java.util.List;
 @Service
 public class AssociadoService {
 
-    private final AssociadoRepositoy associadoRepositoy;
+    private final AssociadoRepository associadoRepositoy;
 
-    public AssociadoService(AssociadoRepositoy associadoRepositoy) {
+    public AssociadoService(AssociadoRepository associadoRepositoy) {
         this.associadoRepositoy = associadoRepositoy;
     }
 

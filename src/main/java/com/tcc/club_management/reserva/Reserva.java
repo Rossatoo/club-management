@@ -2,6 +2,7 @@ package com.tcc.club_management.reserva;
 
 import com.tcc.club_management.associado.Associado;
 import com.tcc.club_management.espaco.Espaco;
+import com.tcc.club_management.usuario.Usuario;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -23,6 +24,9 @@ public class Reserva {
 
     @ManyToOne
     private Associado associado;
+
+    @ManyToOne
+    private Usuario usuario; //para comum
 
     @ManyToOne
     private Espaco espaco;

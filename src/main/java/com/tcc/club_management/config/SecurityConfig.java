@@ -40,6 +40,9 @@ public class SecurityConfig {
                 ))
                 .authorizeHttpRequests(auth -> auth
                         .requestMatchers("/auth/login", "/auth/register", "/home", "/login").permitAll()
+                        .requestMatchers(HttpMethod.POST, "/reservas").hasAnyRole("COMUM", "SOCIO", "ADMIN")
+                        .requestMatchers(HttpMethod.GET, "/reservas").hasRole("ADMIN")
+                        .requestMatchers("/reservas/**").hasAnyRole("COMUM", "ADMIN", "SOCIO")
                         .requestMatchers("/espacos/**").hasAnyRole("COMUM", "ADMIN", "SOCIO")
                         .requestMatchers("/admin/**").hasRole("ADMIN")
                         .anyRequest().authenticated()
